@@ -1,0 +1,18 @@
+Branch if a custom component for n-args Tree
+Using Branch --> import
+
+var tree = new Branch(folder, ...leaves) --> creating tree, there root is folder, leaves are ..leaves
+var tree = new Branch() --> root is null, leaves is empty OnebindedLinear
+
+tree.folder --> returns root
+tree.leaves --> returns array of OnebindedLinear
+tree.power --> returns a length of leaves
+tree.folder = some --> root = some
+tree.leaves = some --> some must be only an array
+tree.folders --> returns folders of leaves
+tree.getLeaveBy(pos) --> returns leave that stays at pos
+tree.insertLeaveAfter(pos, data) --> "you know"
+tree.deleteLeaveBy(pos) --> "also know"
+tree.setLeave(data, pos) --> "..."
+tree.appendLeave(data) --> appends data into leaves
+tree.prependLeave(data) --> prepends data into leaves
