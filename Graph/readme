@@ -1,0 +1,31 @@
+Manual:
+
+- Constructing: 
+    let graph = new Graph() - empty
+    let graph = new Graph(2, "3", "5") - it writes just "3", "5" because of "only string for names"
+
+- Getters: 
+    - graph.graph - returns object of graph
+    - graph.names - returns names of graph
+    - graph.nodes - reurns values of names
+    - graph.connections - returns connections of names
+    - graph.getPowerOf(name) - returns power of nodes
+    - graph.getNodeOf(name) - returns value of name
+    - graph.getConnectionOf(name) - returns names that are connected with name
+    - graph.getCompositionOf(name) - returns all names that are connected with name and another names that are connected with names
+    - graph.eq() - returns result of building equivalance from general connections
+
+- Setters:
+    - graph.setNodeOf(name, value) - sets value of name
+    - graph.setConnectionOf(name, ...nodeNames) - sets connections of name
+    - graph.addConnection(name, nodeName) - adds connection to name
+    - graph.createNameOf(name) - adds name to graph
+
+- Removers:
+    - graph.deleteNodeOf(name) - deletes name of graph and removes it from all objects
+    - graph.deleteConnectionOf(name, nodeName) - deletes connection from name
+    - graph.emptyConnection() - deletes all connections of name
+
+- Makers:
+    - graph.cut(name) - cuts graph using 
+        Getters: - graph.getCompositionOf, but without name
